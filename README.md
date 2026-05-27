@@ -25,7 +25,7 @@ In Cosine, you will find:
 * plot_cosine_query_para_4panel_adv_vs_control.py computes the cosine similarity between each paraphrase and its query and outputs the corresponding 4-panel plot: cosine_query_para_4panel_adv_vs_control_violin_box_shared_y.png.
 * plot_l1_perturbation_vs_cosine_to_query_{model}.py computes the cosine similarity and L1 distance between each paraphrase and its query and outputs the corresponding plot: scatter_l1_perturbation_vs_cosine_to_query_{model}.png.
 
-  <img width="3630" height="1056" alt="cosine_query_para_4panel_adv_vs_control_violin_box_shared_y" src="https://github.com/user-attachments/assets/e1e0a039-7c36-435e-bd83-8a7e4c24080a" /> <img width="500" height="500" alt="scatter_l1_perturbation_vs_cosine_to_query_llama1b" src="https://github.com/user-attachments/assets/e92faabc-5887-47ac-aeef-6b7c5aa04657" />
+  <img width="3630" height="1056" alt="cosine_query_para_4panel_adv_vs_control_violin_box_shared_y" src="https://github.com/user-attachments/assets/e1e0a039-7c36-435e-bd83-8a7e4c24080a" /> <img width="200" height="250" alt="scatter_l1_perturbation_vs_cosine_to_query_llama1b" src="https://github.com/user-attachments/assets/e92faabc-5887-47ac-aeef-6b7c5aa04657" />
 
 
 In SVM (Support Vector Machine), you will find:
