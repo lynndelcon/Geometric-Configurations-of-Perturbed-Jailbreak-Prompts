@@ -2,7 +2,7 @@
 This repository gathers the python codes used to conduct the pipeline analysis reported in the corresponding paper. All codes have been implemented by 5.3-Codex Medium following specific instructions.
 
 
-<img width="2697" height="3058" alt="crossmodel_hyperplanes_4panel" src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d" />, <img width="2697" height="2179" alt="crossmodel_pca_4panel" src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45" />
+<img width="2697" height="3058" alt="crossmodel_hyperplanes_4panel" src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d" /> <img width="2697" height="2179" alt="crossmodel_pca_4panel" src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45" />
 
 
 
