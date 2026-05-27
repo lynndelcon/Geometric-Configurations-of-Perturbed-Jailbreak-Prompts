@@ -27,7 +27,7 @@ In Cosine, you will find:
 
   <img width="3630" height="1056" alt="cosine_query_para_4panel_adv_vs_control_violin_box_shared_y" src="https://github.com/user-attachments/assets/e1e0a039-7c36-435e-bd83-8a7e4c24080a" />
 
-  <img width="2310" height="1650" alt="scatter_l1_perturbation_vs_cosine_to_query_llama1b" src="https://github.com/user-attachments/assets/e92faabc-5887-47ac-aeef-6b7c5aa04657" />
+  <img width="1056" height="1056" alt="scatter_l1_perturbation_vs_cosine_to_query_llama1b" src="https://github.com/user-attachments/assets/e92faabc-5887-47ac-aeef-6b7c5aa04657" />
 
 
 In SVM (Support Vector Machine), you will find:
