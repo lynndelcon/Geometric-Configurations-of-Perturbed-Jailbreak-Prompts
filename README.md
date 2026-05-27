@@ -40,7 +40,7 @@ In Proba, you will find:
 * run_rf_regression_5models_firstprob_{model}.py runs the random-forest regression for the five selected regression models in order to best characterize the top-1 probability space and cluster it.
 * run_gee_label_vs_token_pcat_family_top3_queries.py runs the Generalize Estimating Equation (GEE) logistic regression in order to capture significant association of variables with the label answer (Model's behavior section).
 
- <img src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45">
+ <img src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45" width=45%>
 
 In PR, you will find:
 * compute_participation_ratio_17spaces_{model}.py computes the PR of 17 different embedding configurations.
