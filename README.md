@@ -20,9 +20,6 @@ In Answers, you will find:
 * Model_answers_generation.py gathers the answers to each jailbreak query.
 * Llama_Guard_Labeling.py uses Llama Guard 4 to label the gathered answers as safe (:= refusal) or unsafe (:= compliant).
 
-<img width="200" height="200" alt="crossmodel_llamaguard_proportions_radar" src="https://github.com/user-attachments/assets/2dad7f88-ba69-4742-a4bf-5bdfc34cddcb" />
-
-
 In Pipeline_Analysis, you will find the following substructure:
 - Cosine
 - SVM
@@ -46,12 +43,8 @@ In Proba, you will find:
 * run_rf_regression_5models_firstprob_{model}.py runs the random-forest regression for the five selected regression models in order to best characterize the top-1 probability space and cluster it.
 * run_gee_label_vs_token_pcat_family_top3_queries.py runs the Generalize Estimating Equation (GEE) logistic regression in order to capture significant association of variables with the label answer (Model's behavior section).
 
-<img width="500" height="600" alt="top1_token_string_hist_datasets_shared_y_5x2_qwen1b" src="https://github.com/user-attachments/assets/ea8fa8f2-6f8f-46bf-92f2-35469da35384" />
-
 In PR, you will find:
 * compute_participation_ratio_17spaces_{model}.py computes the PR of 17 different embedding configurations.
-
-<img width="500" height="500" alt="crossmodel_participation_ratio_17spaces_radar" src="https://github.com/user-attachments/assets/842ca6d8-4900-4534-bd3d-7a9f8047672f" />
 
 
 
