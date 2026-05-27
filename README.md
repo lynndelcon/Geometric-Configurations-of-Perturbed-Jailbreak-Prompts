@@ -15,6 +15,9 @@ In Answers, you will find:
 * Model_answers_generation.py gathers the answers to each jailbreak query.
 * Llama_Guard_Labeling.py uses Llama Guard 4 to label the gathered answers as safe (:= refusal) or unsafe (:= compliant).
 
+<img width="2640" height="2200" alt="crossmodel_llamaguard_proportions_radar" src="https://github.com/user-attachments/assets/2dad7f88-ba69-4742-a4bf-5bdfc34cddcb" />
+
+
 In Pipeline_Analysis, you will find the following substructure:
 - Cosine
 - SVM
@@ -34,6 +37,7 @@ In SVM (Support Vector Machine), you will find:
 * svm_compliance_vs_refusal_adv_llamaguard_cv_raw.py runs the last SVM analysis to find a behavioral hyperplane, i.e., the linear separation between refusal and compliant answers using the Llama Guard 4 labels.
 * plot_hyperplanes_3x2_signed_distance_panels_{model}.py outputs the corresponding plot: hyperplanes_3x2_signed_distance_panels_{model}.png
 
+<img width="3960" height="4400" alt="hyperplanes_3x2_signed_distance_panels_llama1b" src="https://github.com/user-attachments/assets/7511f5e2-e474-42c6-90a6-817c322977df" />
 
 In Proba, you will find:
 * compute_participation_ratio_topk_probs_{model}.py computes the Participation-Ratio (PR) of all observations in the 50-dimensional top probability space.
@@ -41,6 +45,9 @@ In Proba, you will find:
 * plot_top1_token_string_histograms.py outputs the hisograms of the 25 most frequent first-next-token of each family (query and paraphrase category) colored by their associated probability.
 * run_rf_regression_5models_firstprob_{model}.py runs the random-forest regression for the five selected regression models in order to best characterize the top-1 probability space and cluster it.
 * run_gee_label_vs_token_pcat_family_top3_queries.py runs the Generalize Estimating Equation (GEE) logistic regression in order to capture significant association of variables with the label answer (Model's behavior section).
+
+<img width="4320" height="3360" alt="pca_4panel_embeddings_llama1b" src="https://github.com/user-attachments/assets/bad3d1c7-720e-452c-8d78-7907d7c878de" />
+<img width="3520" height="4290" alt="top1_token_string_hist_datasets_shared_y_5x2_llama1b" src="https://github.com/user-attachments/assets/de4f4638-aa6c-427b-b118-1ca01417776a" />
 
 In PR, you will find:
 * compute_participation_ratio_17spaces_{model}.py computes the PR of 17 different embedding configurations.
