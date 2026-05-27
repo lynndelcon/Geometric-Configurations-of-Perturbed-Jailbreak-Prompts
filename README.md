@@ -2,6 +2,7 @@
 This repository gathers the python codes used to conduct the pipeline analysis reported in the corresponding paper. 
 
 adv in files := jailbreak in the paper
+
 Symobol in files := Numbers in the paper
 
 In Dataset, you will find the typical codes for one query group and one paraphrase family:
