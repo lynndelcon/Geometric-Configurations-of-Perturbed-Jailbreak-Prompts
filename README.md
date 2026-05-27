@@ -17,13 +17,18 @@ In Answers, you will find:
 
 In Pipeline_Analysis, you will find the following substructure:
 - Cosine
+- SVM
 - Proba
-- PR
-- SVM.
+- PR.
 
 In Cosine, you will find:
 * plot_cosine_query_para_4panel_adv_vs_control.py computes the cosine similarity between each paraphrase and its query and outputs the corresponding 4-panel plot: cosine_query_para_4panel_adv_vs_control_violin_box_shared_y.png.
 * plot_l1_perturbation_vs_cosine_to_query_{model}.py computes the cosine similarity and L1 distance between each paraphrase and its query and outputs the corresponding plot: scatter_l1_perturbation_vs_cosine_to_query_{model}.png.
+
+  <img width="3630" height="1056" alt="cosine_query_para_4panel_adv_vs_control_violin_box_shared_y" src="https://github.com/user-attachments/assets/e1e0a039-7c36-435e-bd83-8a7e4c24080a" />
+
+  <img width="2310" height="1650" alt="scatter_l1_perturbation_vs_cosine_to_query_llama1b" src="https://github.com/user-attachments/assets/e92faabc-5887-47ac-aeef-6b7c5aa04657" />
+
 
 In SVM (Support Vector Machine), you will find:
 * svm_control_vs_adv_cv_raw.py computes the best hyperplane to separate both query groups in the embedding space.
@@ -33,7 +38,14 @@ In SVM (Support Vector Machine), you will find:
 
 
 In Proba, you will find:
-*  
+* compute_participation_ratio_topk_probs_{model}.py computes the Participation-Ratio (PR) of all observations in the 50-dimensional top probability space.
+* plot_pca_4panel_embeddings_{model}.py outputs the 4-panel plot on the reduced dimensional space formed by the two first Principal Compenents and color the points according to their family, embedding regions and model's answer (Llama Guard labels).
+* plot_top1_token_string_histograms.py outputs the hisograms of the 25 most frequent first-next-token of each family (query and paraphrase category) colored by their associated probability.
+* run_rf_regression_5models_firstprob_{model}.py runs the random-forest regression for the five selected regression models in order to best characterize the top-1 probability space and cluster it.
+* run_gee_label_vs_token_pcat_family_top3_queries.py runs the Generalize Estimating Equation (GEE) logistic regression in order to capture significant association of variables with the label answer (Model's behavior section).
+
+In PR, you will find:
+* compute_participation_ratio_17spaces_{model}.py computes the PR of 17 different embedding configurations.
 
 
 
