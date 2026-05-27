@@ -1,6 +1,11 @@
 # Geometric-Configurations-of-Perturbed-Jailbreak-Prompts
 This repository gathers the python codes used to conduct the pipeline analysis reported in the corresponding paper. All codes have been implemented by 5.3-Codex Medium following specific instructions.
 
+
+<img width="2697" height="3058" alt="crossmodel_hyperplanes_4panel" src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d" /> <img width="2697" height="2179" alt="crossmodel_pca_4panel" src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45" />
+
+
+
 Adv in files := jailbreak in the paper and Symobol in files := Numbers in the paper.
 
 In Dataset, you will find the typical codes for one query group and one paraphrase family:
@@ -15,7 +20,7 @@ In Answers, you will find:
 * Model_answers_generation.py gathers the answers to each jailbreak query.
 * Llama_Guard_Labeling.py uses Llama Guard 4 to label the gathered answers as safe (:= refusal) or unsafe (:= compliant).
 
-<img width="2640" height="2200" alt="crossmodel_llamaguard_proportions_radar" src="https://github.com/user-attachments/assets/2dad7f88-ba69-4742-a4bf-5bdfc34cddcb" />
+<img width="200" height="200" alt="crossmodel_llamaguard_proportions_radar" src="https://github.com/user-attachments/assets/2dad7f88-ba69-4742-a4bf-5bdfc34cddcb" />
 
 
 In Pipeline_Analysis, you will find the following substructure:
@@ -28,16 +33,11 @@ In Cosine, you will find:
 * plot_cosine_query_para_4panel_adv_vs_control.py computes the cosine similarity between each paraphrase and its query and outputs the corresponding 4-panel plot: cosine_query_para_4panel_adv_vs_control_violin_box_shared_y.png.
 * plot_l1_perturbation_vs_cosine_to_query_{model}.py computes the cosine similarity and L1 distance between each paraphrase and its query and outputs the corresponding plot: scatter_l1_perturbation_vs_cosine_to_query_{model}.png.
 
-  <img width="1815" height="528" alt="cosine_query_para_4panel_adv_vs_control_violin_box_shared_y" src="https://github.com/user-attachments/assets/e1e0a039-7c36-435e-bd83-8a7e4c24080a" /> <img width="250" height="200" alt="scatter_l1_perturbation_vs_cosine_to_query_llama1b" src="https://github.com/user-attachments/assets/e92faabc-5887-47ac-aeef-6b7c5aa04657" />
-
-
 In SVM (Support Vector Machine), you will find:
 * svm_control_vs_adv_cv_raw.py computes the best hyperplane to separate both query groups in the embedding space.
 * svm_crossed_control_para_vs_adv_para_cv_raw.py computes the best hyperplane to separate the control paraphrases that crossed the first hyperplane and fall into the jailbreak query side against all jailbreak paraphrases.
 * svm_compliance_vs_refusal_adv_llamaguard_cv_raw.py runs the last SVM analysis to find a behavioral hyperplane, i.e., the linear separation between refusal and compliant answers using the Llama Guard 4 labels.
 * plot_hyperplanes_3x2_signed_distance_panels_{model}.py outputs the corresponding plot: hyperplanes_3x2_signed_distance_panels_{model}.png
-
-<img width="3960" height="4400" alt="hyperplanes_3x2_signed_distance_panels_llama1b" src="https://github.com/user-attachments/assets/7511f5e2-e474-42c6-90a6-817c322977df" />
 
 In Proba, you will find:
 * compute_participation_ratio_topk_probs_{model}.py computes the Participation-Ratio (PR) of all observations in the 50-dimensional top probability space.
@@ -46,11 +46,12 @@ In Proba, you will find:
 * run_rf_regression_5models_firstprob_{model}.py runs the random-forest regression for the five selected regression models in order to best characterize the top-1 probability space and cluster it.
 * run_gee_label_vs_token_pcat_family_top3_queries.py runs the Generalize Estimating Equation (GEE) logistic regression in order to capture significant association of variables with the label answer (Model's behavior section).
 
-<img width="4320" height="3360" alt="pca_4panel_embeddings_llama1b" src="https://github.com/user-attachments/assets/bad3d1c7-720e-452c-8d78-7907d7c878de" />
-<img width="3520" height="4290" alt="top1_token_string_hist_datasets_shared_y_5x2_llama1b" src="https://github.com/user-attachments/assets/de4f4638-aa6c-427b-b118-1ca01417776a" />
+<img width="500" height="600" alt="top1_token_string_hist_datasets_shared_y_5x2_qwen1b" src="https://github.com/user-attachments/assets/ea8fa8f2-6f8f-46bf-92f2-35469da35384" />
 
 In PR, you will find:
 * compute_participation_ratio_17spaces_{model}.py computes the PR of 17 different embedding configurations.
+
+<img width="500" height="500" alt="crossmodel_participation_ratio_17spaces_radar" src="https://github.com/user-attachments/assets/842ca6d8-4900-4534-bd3d-7a9f8047672f" />
 
 
 
