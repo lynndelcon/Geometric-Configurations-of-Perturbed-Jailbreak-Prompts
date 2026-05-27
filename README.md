@@ -1,7 +1,7 @@
 # Geometric-Configurations-of-Perturbed-Jailbreak-Prompts
 This repository gathers the python codes used to conduct the pipeline analysis reported in the corresponding paper. All codes have been implemented by 5.3-Codex Medium following specific instructions.
 
-  <img src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d">
+  <img src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d", width=45%>
  
 Adv in files := jailbreak in the paper and Symobol in files := Numbers in the paper.
 
