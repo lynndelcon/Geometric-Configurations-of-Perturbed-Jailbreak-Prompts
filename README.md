@@ -1,11 +1,8 @@
 # Geometric-Configurations-of-Perturbed-Jailbreak-Prompts
 This repository gathers the python codes used to conduct the pipeline analysis reported in the corresponding paper. All codes have been implemented by 5.3-Codex Medium following specific instructions.
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d" width="45%">
-  <img src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45" width="45%">
-</p>
-
+  <img src="https://github.com/user-attachments/assets/92221b64-af47-462c-945c-c6c6b1bee29d">
+ 
 Adv in files := jailbreak in the paper and Symobol in files := Numbers in the paper.
 
 In Dataset, you will find the typical codes for one query group and one paraphrase family:
@@ -42,6 +39,8 @@ In Proba, you will find:
 * plot_top1_token_string_histograms.py outputs the hisograms of the 25 most frequent first-next-token of each family (query and paraphrase category) colored by their associated probability.
 * run_rf_regression_5models_firstprob_{model}.py runs the random-forest regression for the five selected regression models in order to best characterize the top-1 probability space and cluster it.
 * run_gee_label_vs_token_pcat_family_top3_queries.py runs the Generalize Estimating Equation (GEE) logistic regression in order to capture significant association of variables with the label answer (Model's behavior section).
+
+ <img src="https://github.com/user-attachments/assets/5b7fc21e-84c6-49ab-9fc0-218c8cdd9d45">
 
 In PR, you will find:
 * compute_participation_ratio_17spaces_{model}.py computes the PR of 17 different embedding configurations.
